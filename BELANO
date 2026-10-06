@@ -5,7 +5,7 @@ void main() {
   int quantity = 3;
   double pricePerUnit = 29.99;
   bool isDiscountApplied = false;          
-  String customerName = 'Alex';
+  String customerName = 'AlINA';
 
   double subtotal = quantity * pricePerUnit;
   double taxRate = 0.08;
