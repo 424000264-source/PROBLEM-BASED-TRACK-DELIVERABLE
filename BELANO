@@ -18,7 +18,7 @@ void main() {
   print('RECEIPT FOR: $customerName');
   print('Item Purchased: $itemName');
   print('Quantity: $quantity');
-  print('Price per unit: \$${pricePerUnit.toStringAsFixed(2)}');
-  print('Total Cost (incl. tax): \$${totalCost.toStringAsFixed(2)}');
+  print('Price per unit: \₱${pricePerUnit.toStringAsFixed(2)}');
+  print('Total Cost (incl. tax): \₱${totalCost.toStringAsFixed(2)}');
   print('Eligible for VIP Discount (> \$50): $isDiscountApplied');
 }
