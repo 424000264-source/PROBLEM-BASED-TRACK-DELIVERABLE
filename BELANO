@@ -1,0 +1,24 @@
+void main() {
+  print('=== Simple Store Checkout System ===\n');
+
+  String itemName = 'Dart Programming Book';
+  int quantity = 3;
+  double pricePerUnit = 29.99;
+  bool isDiscountApplied = false;          
+  String customerName = 'Alex';
+
+  double subtotal = quantity * pricePerUnit;
+  double taxRate = 0.08;
+  double totalCost = subtotal + (subtotal * taxRate);
+
+  if (totalCost > 50.0) { 
+    isDiscountApplied = true;
+  }
+
+  print('RECEIPT FOR: $customerName');
+  print('Item Purchased: $itemName');
+  print('Quantity: $quantity');
+  print('Price per unit: \$${pricePerUnit.toStringAsFixed(2)}');
+  print('Total Cost (incl. tax): \$${totalCost.toStringAsFixed(2)}');
+  print('Eligible for VIP Discount (> \$50): $isDiscountApplied');
+}
